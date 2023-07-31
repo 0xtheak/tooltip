@@ -27,7 +27,7 @@ Installation
 
 Navigate to the project directory.
 
-    cd react-tooltip-app
+    cd tooltip
 
 Install the dependencies.
 
