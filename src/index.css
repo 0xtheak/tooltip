@@ -34,14 +34,7 @@ body {
   display: block;
 }
 
-/* Create the tooltip arrow */
-.hovering-tooltip::before {
-  content: "";
-  position: absolute;
-  border-width: 6px;
-  border-style: solid;
-  background: #333;
-}
+
 
 /* Positioning the tooltip based on the button clicked */
 .tooltip.top .hovering-tooltip {
