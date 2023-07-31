@@ -23,7 +23,6 @@ body {
   display: none;
   position: absolute;
   background-color: #333;
-  color: #fff;
   padding: 10px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -41,10 +40,12 @@ body {
   position: absolute;
   border-width: 6px;
   border-style: solid;
+  background: #333;
 }
 
 /* Positioning the tooltip based on the button clicked */
 .tooltip.top .hovering-tooltip {
+  position: absolute;
   bottom: 100%;
   left: 50%;
   margin-bottom: 10px;
@@ -77,6 +78,7 @@ body {
 .hovering-tooltip p {
   margin: 0;
   line-height: 1.6;
+  color: white;
   white-space: nowrap;
 }
 
@@ -88,6 +90,8 @@ body {
 
 .position-buttons button {
   margin: 10px;
+  height: inherit;
+  width: 200px;
   background-color: #f28f3d;
   color: #fff;
   font-size: 1.3rem;
@@ -115,7 +119,7 @@ body {
   font-size: 1.3rem;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s ease;
+  transition:  0.2s;
 }
 
 .hover-on-me:hover {

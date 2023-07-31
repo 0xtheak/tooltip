@@ -17,13 +17,15 @@ const App = () => {
   return (<>
       <div className={`tooltip ${position}`} onMouseEnter={() => setShowTT(true)} onMouseLeave={() => setShowTT(false)}>
         <button className='hover-on-me'>Hover over me!</button>
-        {showTT && <div className={`hovering-tooltip ${position}`}><p>Thanks for hovering over me!</p></div>}
+        {showTT && <div className={`hovering-tooltip ${position}`}><p>Thanks for hovering over me! I'm Tooltip</p></div>}
       </div>
       <div className='position-buttons'>
-        <button onClick={()=> handlePositionChange('right')}>Right</button>
-        <button onClick={()=> handlePositionChange('left')}>Left</button>
         <button onClick={()=> handlePositionChange('top')}>Top</button>
         <button onClick={()=> handlePositionChange('bottom')}>Bottom</button>
+        <button onClick={()=> handlePositionChange('right')}>Right</button>
+        <button onClick={()=> handlePositionChange('left')}>Left</button>
+        
+        <h3>Select the tooltip hovering position</h3>
       </div>
     </>);
 };
