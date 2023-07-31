@@ -1,0 +1,38 @@
+.tooltip-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    padding: 6px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 1;
+    display: none;
+  }
+  
+  /* Show tooltip on hover */
+  .tooltip-container:hover .tooltip {
+    display: block;
+  }
+  
+  /* Positioning the tooltip based on the 'position' prop */
+  .tooltip-top {
+    transform: translateY(-100%);
+  }
+  
+  .tooltip-bottom {
+    transform: translateY(100%);
+  }
+  
+  .tooltip-left {
+    transform: translateX(-100%);
+  }
+  
+  .tooltip-right {
+    transform: translateX(100%);
+  }
+  
